@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+.dialog-container {
+  position: absolute;
+  inset: 0;
+  background-color: #5555;
+  display: flex;
+  justify-content: center;
+}
+
+.dialog-box {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  padding: 0;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.dialog-box header h2 {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid #666;
+}
+
+.dialog-box main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: stretch;
+  position: relative;
+}
+
+.dialog-box main form {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-box .actions {
+  display: flex;
+  justify-content: stretch;
+}
+
+.hidden {
+  display: none;
+}
